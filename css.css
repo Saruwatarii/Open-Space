@@ -1,0 +1,102 @@
+body {
+  background: black;
+  width: 80vw;
+  margin: auto;
+}
+
+.space {
+  position: relative;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80);
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.control-panel {
+  /* display: flex; */
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(
+    45deg,
+    yellow 20%,
+    black 25%,
+    black 30%
+  );
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  padding: 20px;
+}
+
+.control-panel__inner {
+  text-align: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 360px;
+  height: 275px;
+  background: rgb(24, 24, 24);
+  padding: 30px 50px;
+}
+
+#inputer {
+  color: grey;
+  background: rgb(24, 24, 24);
+  border: 1px solid yellow;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+.check-buttons {
+  margin-top: 25px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-buttons input {
+  margin-right: -8px;
+}
+
+.levers {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.slider {
+  width: 81px;
+
+  transform: rotate(-90deg);
+}
+
+#pwBtn {
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  margin-left: 30px;
+}
+
+#btn {
+  bottom: 10%;
+  right: 38%;
+  position: absolute;
+  border-radius: 58%;
+  padding: 25px 20px;
+  background-color: red;
+  font-size: 1.6rem;
+  color: white;
+  border: solid 1px white;
+}
+
+.planet {
+  position: absolute;
+  left: -325px;
+  bottom: -375px;
+}
+
+#rocket {
+  transform: rotate(30deg);
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  left: 175px;
+  bottom: 225px;
+}
